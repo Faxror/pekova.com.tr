@@ -1,336 +1,737 @@
-﻿
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
 
 <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta charset="UTF-8">
 
-    <title>Deniz Pekova - CV</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
+    <!-- Page Title -->
+    <title>Deniz Pekova | CV</title>
 
-    <!-- Favicons -->
-    <link href="~/iPortfolio/assets/img/favicon.ico" rel="icon">
-    <link href="~/iPortfolio/assets/img/apple-touch-icon.ico" rel="apple-touch-icon">
+    <!-- Meta Tags -->
+    <meta name="description" content="Show yourself brightly with Braxton - unique and creative portfolio and resume template!">
+    <meta name="keywords" content="mix_design, resume, portfolio, personal page, cv, template, one page, responsive, html5, css3, creative, clean">
+    <meta name="author" content="mix_design">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <!-- Viewport Meta-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <!-- Vendor CSS Files -->
-    <link href="~/iPortfolio/assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="~/iPortfolio/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="~/iPortfolio/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="~/iPortfolio/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="~/iPortfolio/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="~/iPortfolio/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-    <!-- Template Main CSS File -->
-    <link href="~/iPortfolio/assets/css/style.css" rel="stylesheet">
-
-
+    <!-- Template Favicon & Icons Start -->
+    <link rel="icon" href="~/HTML/img/favicon/favicon.ico" sizes="any">
+    <link rel="icon" href="~/HTML/img/favicon/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="~/HTML/img/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="~/HTML/img/favicon/manifest.webmanifest">
+    <!-- Template Favicon & Icons End -->
+    <!-- Facebook Metadata Start -->
+    <meta property="og:image:height" content="1200">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:title" content="Deniz Pekova | CV">
+    <meta property="og:description" content="Show yourself brightly with Braxton - unique and creative portfolio and resume template!">
+    <meta property="og:url" content="https://mixdesign.club/themeforest/braxton">
+    <meta property="og:image" content="https://mixdesign.club/themeforest/braxton/img/favicon/og-image.jpg">
+    <!-- Facebook Metadata End -->
+    <!-- Template Styles Start -->
+    <link rel="stylesheet" href="~/HTML/css/loaders/loader.css">
+    <link rel="stylesheet" type="text/css" href="~/HTML/css/plugins.css">
+    <link rel="stylesheet" type="text/css" href="~/HTML/css/main.css">
+    <!-- Template Styles End -->
+    <!-- Custom Browser Color Start -->
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#dcdce7">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#111111">
+    <meta name="msapplication-navbutton-color" content="#111111">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Custom Browser Color End -->
 </head>
 
 <body>
 
-    <!-- ======= Mobile nav toggle button ======= -->
-    <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+    <!-- Loader Start -->
+    <div id="loader" class="loader">
+        <div id="loaderContent" class="loader__content">
+            <div class="loader__shadow"></div>
+            <div class="loader__box"></div>
+        </div>
+    </div>
+    <!-- Loader End -->
+    <!-- Header Start -->
+    <header id="header" class="header d-flex justify-content-between">
 
-    <!-- ======= Header ======= -->
-    <header id="header">
-        <div class="d-flex flex-column">
+        <!-- Navigation Menu Start -->
+        <div class="header__navigation">
+            <nav id="menu" class="menu">
+                <ul class="menu__list d-flex justify-content-start">
+                    <li class="menu__item">
+                        <a class="menu__link btn" href="#home">
+                            <span class="menu__caption">Ana Sayfa</span>
+                            <i class="ph-bold ph-house-simple"></i>
+                        </a>
+                    </li>
 
-            <div class="profile">
-                <img src="~/iPortfolio/assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
-                <h1 class="text-light"><a href="index.html">Deniz Pekova</a></h1>
-                <div class="social-links mt-3 text-center">
-                    <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                    <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-                </div>
-            </div>
-
-            <nav id="navbar" class="nav-menu navbar">
-                <ul>
-                    <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Ana Sayfa</span></a></li>
-                    <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Hakkımda</span></a></li>
-                    <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Geçmiş</span></a></li>
-                    <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Yapabildiklerim</span></a></li>
-                    <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>İletişim</span></a></li>
+                    <li class="menu__item">
+                        <a class="menu__link btn" href="#about">
+                            <span class="menu__caption">Hakkımda</span>
+                            <i class="ph-bold ph-user"></i>
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link btn" href="#resume">
+                            <span class="menu__caption">Eğitim</span>
+                            <i class="ph-bold ph-article"></i>
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link btn" href="#contact">
+                            <span class="menu__caption">İletişim</span>
+                            <i class="ph-bold ph-envelope"></i>
+                        </a>
+                    </li>
                 </ul>
-            </nav><!-- .nav-menu -->
+            </nav>
         </div>
-    </header><!-- End Header -->
-    <!-- ======= Hero Section ======= -->
-    <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-        <div class="hero-container" data-aos="fade-in">
-            <h1>Deniz Pekova</h1>
-            <p>I'm <span class="typed" data-typed-items=" Developer, Freelancer"></span></p>
+        <!-- Navigation Menu End -->
+        <!-- Header Controls Start -->
+        <div class="header__controls d-flex justify-content-end">
+            <button id="color-switcher" class="color-switcher header__switcher btn" type="button" role="switch" aria-label="light/dark mode" aria-checked="true"></button>
+            <a id="notify-trigger" class="header__trigger btn" href="mailto:info@pekova.com.tr?subject=Message%20from%20your%20site">
+                <span class="trigger__caption">Hadi Konuşalım</span>
+                <i class="ph-bold ph-chat-dots"></i>
+            </a>
         </div>
-    </section><!-- End Hero -->
+        <!-- Header Controls End -->
 
-    <main id="main">
+    </header>
+    <!-- Header End -->
+    <!-- SVG Background Start -->
+    <div id="svgBackground" class="svg-background">
+        <!-- top svg item -->
+        <div class="background__svg01" data-speed="0.8">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                 width="1000px" height="1000px" viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;" xml:space="preserve">
+            <style type="text/css">
+                .bg01 {
+                    fill: url(#color-gradient);
+                }
+</style>
+            <radialGradient id="color-gradient" cx="418.5665" cy="225.9685" r="499.9326" fx="866.8251" fy="4.6162" gradientTransform="matrix(-0.6935 0.7207 -0.7207 -0.6935 953.1126 355.0528)" gradientUnits="userSpaceOnUse">
+            <stop offset="0" style="stop-color:#CEC4EF" />
+            <stop offset="1" style="stop-color:#CEC4EF;stop-opacity:0" />
+          </radialGradient>
+            <circle class="bg01" cx="500" cy="500" r="500" />
+        </svg>
+        </div>
+        <!-- bottom svg item -->
+        <div class="background__svg02" data-speed="0.4">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="429.6px" height="429.6px"
+                 viewBox="0 0 429.6 429.6" style="enable-background:new 0 0 429.6 429.6;" xml:space="preserve">
+            <style type="text/css">
+                .bg02 {
+                    fill: url(#color-gradient-2);
+                }
+</style>
+            <g id="Layer_1-2">
+            <radialGradient id="color-gradient-2" cx="2213.9312" cy="-11537.4219" r="214.85" fx="2393.6191" fy="-11419.6494" gradientTransform="matrix(1.902285e-02 0.9998 0.9998 -1.954636e-02 11706.5303 -2223.4016)" gradientUnits="userSpaceOnUse">
+            <stop offset="0" style="stop-color:#CEC4EF" />
+            <stop offset="1" style="stop-color:#CEC4EF;stop-opacity:0" />
+          </radialGradient>
+            <path class="bg02" d="M63,63C146.9-21,282.9-21,366.8,62.9s83.8,219.9-0.1,303.8s-219.9,83.9-303.8,0.1S-20.9,146.9,63,63z" />
+        </g>
+        </svg>
+        </div>
+    </div>
+    <!-- SVG Background End -->
+    <!-- Avatar Side Block Start -->
+    <div id="avatar" class="avatar">
+        <div class="avatar__container d-flex flex-column justify-content-lg-between">
+            <!-- image and logo -->
+            <div class="avatar__block">
+                <div class="avatar__logo d-flex align-items-center">
+                    <div class="logo__image">
+                        <!-- Your Logo Here!!! -->
+                        <!--<img src="img/logo.svg" alt="Braxton - Personal Portfolio & Resume HTML Template Logo">-->
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                             width="85px" height="85px" viewBox="0 0 85 85"
+                             style="enable-background:new 0 0 85 85;" xml:space="preserve" class="gradient-fill">
+                        <style type="text/css">
+                            .gradient-fill {
+                                fill: url(#gradientFill);
+                            }
+</style>
 
-        <!-- ======= About Section ======= -->
-        <section id="about" class="about">
-            <div class="container">
 
-                <div class="section-title">
-                    <h2>Hakkımda</h2>
-                    <p>Merhaba ben Deniz, 5.sınıftan beri web yazılımı ve robotik alanda kendimi geliştirmekte olup, farklı alanlar da başka işler de yapmaktayım..</p>
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-4" data-aos="fade-right">
-                        <img src="~/iPortfolio/assets/img/profile-img.jpg" class="img-fluid" alt="">
+              </svg>
                     </div>
-                    <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-                        <h3>Back-end Developer.</h3>
-                        <p class="fst-italic">
-
-                        </p>
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <ul>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Doğum Günüm:</strong> <span>27 Kasım 2006</span></li>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.pekova.com.tr</span></li>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Telefon:</strong> <span>+90 505 092 9479</span></li>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Şehir:</strong> <span>İstanbul, Türkiye</span></li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-6">
-                                <ul>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Yaş:</strong> <span>18</span></li>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Derece:</strong> <span>Orta</span></li>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>info@pekova.com.tr</span></li>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Mevcut</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <p>
-
-                        </p>
+                    <div class="logo__caption">
+                        <p>Deniz<br>Pekova</p>
                     </div>
                 </div>
-
+                <div class="avatar__image">
+                    <img src="https://devtest.pekova.com.tr/app/cv/img/profil.jpg" alt="Braxton - Personal Portfolio & Resume HTML Template Avatar">
+                </div>
             </div>
-        </section><!-- End About Section -->
-        <!-- ======= Facts Section ======= -->
-        <section id="facts" class="facts">
-            <div class="container">
-
-                <div class="section-title">
-                    <h2>Gerçekler</h2>
-                    <p>Bu zamana kadar benimle çalışanların dereceleri.</p>
-                </div>
-
-                <div class="row no-gutters">
-
-                    <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
-                        <div class="count-box">
-                            <i class="bi bi-emoji-smile"></i>
-                            <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"></span>
-                            <p><strong>Mutlu Muşteriler</strong></p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="100">
-                        <div class="count-box">
-                            <i class="bi bi-journal-richtext"></i>
-                            <span data-purecounter-start="0" data-purecounter-end="16" data-purecounter-duration="1" class="purecounter"></span>
-                            <p><strong>Yaptığım Projeler</strong> Bu zamana kadar yaptığım proje sayısı</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="200">
-                        <div class="count-box">
-                            <i class="bi bi-headset"></i>
-                            <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"></span>
-                            <p><strong>Sunduğum Destek</strong> </p>
-                        </div>
-                    </div>
-
-
-
-                </div>
-
+            <!-- data caption #1 -->
+            <div class="avatar__block">
+                <h6>
+                    <small class="top">Uzmanlık:</small>
+                    asp.net core developer<br>and back-end developer
+                </h6>
             </div>
-        </section><!-- End Facts Section -->
-        <!-- ======= Skills Section ======= -->
-        <section id="skills" class="skills section-bg">
-            <div class="container">
-
-                <div class="section-title">
-                    <h2>Bildiklerim</h2>
-                    <p>Bildiğim yazılım dilleri.</p>
+            <!-- data caption #2 -->
+            <div class="avatar__block">
+                <h6>
+                    <small class="top">Konum</small>
+                    İstanbul, Turkiye
+                </h6>
+            </div>
+            <!-- socials and CTA button -->
+            <div class="avatar__block">
+                <div class="avatar__socials">
+                    <ul class="socials-square d-flex justify-content-between">
+                        <li class="socials-square__item">
+                            <a class="socials-square__link btn" href="https://www.linkedin.com/in/deniz-pekova/" target="_blank"><i class="ph-bold ph-dribbble-logo"></i></a>
+                        </li>
+                        <li class="socials-square__item">
+                            <a class="socials-square__link btn" href="https://www.instagram.com/deniz_pekova/" target="_blank"><i class="ph-bold ph-instagram-logo"></i></a>
+                        </li>
+                    </ul>
                 </div>
+                <div class="avatar__btnholder">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Avatar Side Block End -->
+    <!-- Page Content Start -->
+    <div id="content" class="content">
+        <div class="content__wrapper">
 
-                <div class="row skills-content">
+            <!-- Intro Section Start -->
+            <section id="home" class="main intro">
 
-                    <div class="col-lg-6" data-aos="fade-up">
+                <!-- Headline Start -->
+                <div id="headline" class="headline d-flex align-items-start flex-column">
+                    <p class="headline__subtitle animate-headline">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13" fill="currentColor">
+                            <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
+                  C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
+                  C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z" />
+                        </svg>
+                        <span>Hadi buluÅŸalÄ±m!</span>
+                    </p>
+                    <h1 class="headline__title animate-headline">I'm Deniz Pekova<br>Asp.net Core Developer.</h1>
+                    <div class="headline__btnholder d-flex flex-column flex-sm-row">
 
 
+                        <a class="btn mobile-vertical btn-default btn-hover btn-hover-outline-mobile animate-headline" href="#0">
+                            <span class="btn-caption">CV'yi indir</span>
+                            <i class="ph-bold ph-download-simple"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Headline End -->
+                <!-- Scroll Button Start -->
+                <div class="rotating-btn">
+                    <a href="#portfolio" class="rotating-btn__link slide-down">
+                        <!-- SVG rotating text -->
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             viewBox="0 0 120 120" style="enable-background:new 0 0 120 120;" xml:space="preserve"
+                             class="animate-rotation" data-value="360">
+                        <defs>
+                        <path id="textPath" d="M110,59.5c0,27.6-22.4,50-50,50s-50-22.4-50-50s22.4-50,50-50S110,31.9,110,59.5z" />
+                </defs>
+                        <g>
+                        <use xlink:href="#textPath" fill="none"></use>
+                        <text>
+                    <!-- button text here!!! -->
+                        <textPath xlink:href="#textPath">Aşağıya Kaydır * Aşağıya Kaydır * </textPath>
+                  </text>
+                </g>
+              </svg>
+                        <!-- arrow icon -->
+                        <i class="ph-bold ph-arrow-down"></i>
+                    </a>
+                </div>
+                <!-- Scroll Button End -->
 
-                        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            </section>
+            <!-- Intro Section End -->
+            <!-- Portfolio Section Start -->
+            <!-- About Section Start -->
+            <section id="about" class="inner about">
 
-                            <div class="progress">
-                                <span class="skill">C# <i class="val">80%</i></span>
-                                <div class="progress-bar-wrap">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                <!-- Content Block - H2 Section Title Start -->
+                <div class="content__block section-grid-title">
+                    <p class="h2__subtitle animate-in-up">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13" fill="currentColor">
+                            <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
+                  C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
+                  C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z" />
+                        </svg>
+                        <span>HakkÄ±mda</span>
+                    </p>
+                    <h2 class="h2__title animate-in-up"></h2>
+                </div>
+                <!-- Content Block - H2 Section Title End -->
+                <!-- Content Block - Achievements Start -->
+                <div class="content__block grid-block">
+                    <div class="achievements d-flex flex-column flex-md-row align-items-md-stretch">
+                        <!-- achievements single item -->
+                        <div class="achievements__item d-flex flex-column grid-item animate-card-3">
+                            <div class="achievements__card">
+                                <p class="achievements__number">20+</p>
+                                <p class="achievements__descr">Mutlu Muşteri</p>
+                            </div>
+                        </div>
+                        <!-- achievements single item -->
+                        <div class="achievements__item d-flex flex-column grid-item animate-card-3">
+                            <div class="achievements__card">
+                                <p class="achievements__number">1.5+</p>
+                                <p class="achievements__descr">Yıl Deneyim</p>
+                            </div>
+                        </div>
+                        <!-- achievements single item -->
+                        <div class="achievements__item d-flex flex-column grid-item animate-card-3">
+                            <div class="achievements__card">
+                                <p class="achievements__number">10+</p>
+                                <p class="achievements__descr">Proje</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Content Block - Achievements End -->
+                <!-- Content Block - About Me Data Start -->
+                <div class="content__block grid-block block-large">
+                    <div class="container-fluid p-0">
+                        <div class="row g-0 justify-content-between">
+
+                            <!-- About Me Description Start -->
+                            <div class="col-12 col-xl-8 grid-item about-descr">
+                                <p class="about-descr__text animate-in-up">
+
+                                    <a href="#0" class="text-link"></a>
+
+                                </p>
+                                <p class="about-descr__text animate-in-up">
+                               
+                                </p>
+                                <div class="btn-group about-descr__btnholder animate-in-up">
+                                    <a class="btn mobile-vertical btn-default btn-hover btn-hover-accent" href="#0">
+                                        <span class="btn-caption">DV'yi indir</span>
+                                        <i class="ph-bold ph-download-simple"></i>
+                                    </a>
                                 </div>
                             </div>
-
-                            <div class="progress">
-                                <span class="skill">.NET / ASP.NET <i class="val">60%</i></span>
-                                <div class="progress-bar-wrap">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                            <!-- About Me Description End -->
+                            <!-- About Me Information Start -->
+                            <div class="col-12 col-xl-4 grid-item about-info">
+                                <div class="about-info__item animate-in-up">
+                                    <h6>
+                                        <small class="top">Ad</small>
+                                        Deniz Pekova
+                                    </h6>
+                                </div>
+                                <div class="about-info__item animate-in-up">
+                                    <h6>
+                                        <small class="top">Telefon</small>
+                                        <a class="text-link-bold" href="tel:+12127089400">+90 505-092-9479</a>
+                                    </h6>
+                                </div>
+                                <div class="about-info__item animate-in-up">
+                                    <h6>
+                                        <small class="top">Email</small>
+                                        <a class="text-link-bold" href="mailto:info@pekova.com.tr?subject=Message%20from%20your%20site">info@pekova.com.tr</a>
+                                    </h6>
+                                </div>
+                                <div class="about-info__item animate-in-up">
+                                    <h6>
+                                        <small class="top">Konum</small>
+                                        <a class="text-link-bold" href="https://maps.app.goo.gl/xMJXTEUeHkv6kYRQ6" target="_blank">İstanbul, Turkiye</a>
+                                    </h6>
                                 </div>
                             </div>
+                            <!-- About Me Information End -->
 
-                            <div class="progress">
-                                <span class="skill">HTML <i class="val">55%</i></span>
-                                <div class="progress-bar-wrap">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Content Block - About Me Data End -->
+
+
+
+            </section>
+            <!-- About Section End -->
+            <!-- Resume Section Start -->
+            <section id="resume" class="inner resume">
+
+                <!-- Content Block - H2 Section Title Start -->
+                <div class="content__block block-large">
+                    <p class="h2__subtitle animate-in-up">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13" fill="currentColor">
+                            <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
+                  C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
+                  C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z" />
+                        </svg>
+                        <span>Resume</span>
+                    </p>
+                    <h2 class="h2__title animate-in-up">Eğitim ve pratik deneyim</h2>
+
+                </div>
+                <!-- Content Block - H2 Section Title End -->
+                <!-- Content Block - Education Start -->
+                <div class="content__block block-large">
+
+                    <!-- H3 Block Start -->
+                    <div class="section-h3">
+                        <h3 class="h3__title animate-in-up">Eğitim Geçmişim</h3>
+                    </div>
+                    <!-- H3 Block End -->
+                    <!-- Education Lines Start -->
+                    <div class="container-fluid p-0 resume-lines">
+                        <!-- education single item -->
+                        <div class="row g-0 resume-lines__item animate-in-up">
+                            <div class="col-12 col-md-2">
+                                <span class="resume-lines__date animate-in-up">2020 - 2021</span>
+                            </div>
+                            <div class="col-12 col-md-5">
+                                <h5 class="resume-lines__title animate-in-up">Şişli Özel Açı Koleji</h5>
+
                             </div>
 
                         </div>
+                        <!-- education single item -->
+                        <div class="row g-0 resume-lines__item animate-in-up">
+                            <div class="col-12 col-md-2">
+                                <span class="resume-lines__date animate-in-up">2022 - 2023</span>
+                            </div>
+                            <div class="col-12 col-md-5">
+                                <h5 class="resume-lines__title animate-in-up">Kağıthane Özel Açı  Koleji</h5>
 
-                    </div>
-
-                </div>
-        </section><!-- End Skills Section -->
-        <!-- ======= Resume Section ======= -->
-        <section id="resume" class="resume">
-            <div class="container">
-
-                <div class="section-title">
-                    <h2>Geçmiş</h2>
-
-                </div>
-
-                <div class="row">
-
-                    <h3 class="resume-title">Eğitim</h3>
-                    <div class="resume-item">
-                        <h4>ŞIŞLI AÇI KOLEJI</h4>
-                        <h5>2021  - 2022</h5>
-                        <p>Fen Lisesi</p>
-                    </div>
-                    <div class="resume-item">
-                        <h4>KAĞITHANE AÇI KOLEJI</h4>
-                        <h5>2022  - 2024</h5>
-                        <p>Fen Lisesi</p>
-                    </div>
-                </div>
-                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                    <h3 class="resume-title">İş Deneyimlerim</h3>
-                    <div class="resume-item">
-                        <h4>STAJYER PAKODEMY</h4>
-                        <h5>Haziran 2023 - Eylül 2023</h5>
-                        <ul>
-                            <li>Eğitim aldığım, gayet iyi insanlarla tanıştığım bir ortam</li>
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
-
-            </div>
-        </section><!-- End Resume Section -->
-        <!-- ======= Services Section ======= -->
-        <section id="services" class="services">
-            <div class="container">
-
-                <div class="section-title">
-                    <h2>Yapabildilerim</h2>
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-                        <div class="icon"><i class="bi bi-briefcase"></i></div>
-                        <h4 class="title"><a href="">API</a></h4>
-                        <p class="description">Sıfırdan API geliştirebilirim.</p>
-                    </div>
-                    <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-                        <div class="icon"><i class="bi bi-card-checklist"></i></div>
-                        <h4 class="title"><a href="">ASP.NET WEB SİTE</a></h4>
-                        <p class="description">Sıfırdan asp.net ile bir web sitesi geliştirebilirim.</p>
-                    </div>
-
-                </div>
-
-            </div>
-        </section><!-- End Services Section -->
-        <!-- ======= Contact Section ======= -->
-        <section id="contact" class="contact">
-            <div class="container">
-
-                <div class="section-title">
-                    <h2>İletişim</h2>
-                    <p>Aşağıdaki bilgiler ile benle iletişime geçebilir dilerseniz yan tarafdan mesaj atabilirsiniz.</p>
-                </div>
-
-                <div class="row" data-aos="fade-in">
-
-                    <div class="col-lg-5 d-flex align-items-stretch">
-                        <div class="info">
-                            <div class="address">
-                                <i class="bi bi-geo-alt"></i>
-                                <h4>Address:</h4>
-                                <p>sa</p>
                             </div>
 
-                            <div class="email">
-                                <i class="bi bi-envelope"></i>
-                                <h4>Email:</h4>
-                                <p>info@pekova.com.tr</p>
+                        </div>
+                        <!-- education single item -->
+                        <div class="row g-0 resume-lines__item animate-in-up">
+                            <div class="col-12 col-md-2">
+                                <span class="resume-lines__date animate-in-up">2023 - 2024</span>
+                            </div>
+                            <div class="col-12 col-md-5">
+                                <h5 class="resume-lines__title animate-in-up">Kağıthane Özel Mektebim Koleji</h5>
+
                             </div>
 
-                            <div class="phone">
-                                <i class="bi bi-phone"></i>
-                                <h4>Telefon:</h4>
-                                <p>+90 505 092 9479</p>
+                        </div>
+                    </div>
+                    <!-- Education Lines End -->
+
+                </div>
+                <!-- Content Block - Education End -->
+                <!-- Content Block - Experience Start -->
+                <div class="content__block block-large">
+
+                    <!-- H3 Block Start -->
+                    <div class="section-h3">
+                        <h3 class="h3__title animate-in-up">İş Deneyimleri</h3>
+                    </div>
+                    <!-- H3 Block End -->
+                    <!-- Experience Lines Start -->
+                    <div class="container-fluid p-0 resume-lines">
+                        <!-- experience single item -->
+                        <div class="row g-0 resume-lines__item animate-in-up">
+                            <div class="col-12 col-md-2">
+                                <span class="resume-lines__date animate-in-up">2023 H - 2023 E</span>
                             </div>
+                            <div class="col-12 col-md-5">
+                                <h5 class="resume-lines__title animate-in-up">Pakodemy</h5>
+                                <p class="resume-lines__source animate-in-up">
+                                    Stajyer Student Developer
+
+                                </p>
+                            </div>
+                            <div class="col-12 col-md-5">
+                                <p class="small resume-lines__descr animate-in-up">Kendime çok şey katdığım ve severek çalıştığım firma.</p>
+                            </div>
+                        </div>
+                        <!-- experience single item -->
+                        <div class="row g-0 resume-lines__item animate-in-up">
+                            <div class="col-12 col-md-2">
+                                <span class="resume-lines__date animate-in-up">2023 - now</span>
+                            </div>
+                            <div class="col-12 col-md-5">
+                                <h5 class="resume-lines__title animate-in-up">Kilitkutu - Web Hosting</h5>
+                                <p class="resume-lines__source animate-in-up">Teknik Destek
+
+                            </div>
+                            <div class="col-12 col-md-5">
+                                <p class="small resume-lines__descr animate-in-up">.</p>
+                            </div>
+                        </div>
+                        <!-- experience single item -->
+                        <div class="row g-0 resume-lines__item animate-in-up">
+                        </div>
+                    </div>
+                    <!-- Experience Lines End -->
+
+                </div>
+                <!-- Content Block - Experience End -->
+                <!-- Content Block - H3 Block Start -->
+                <div class="content__block">
+                    <div class="section-h3 section-h3-grid">
+                        <h3 class="h3__title animate-in-up">Kullandığım Programlar ve Diller</h3>
+                    </div>
+                </div>
+                <!-- Content Block - H3 Block End -->
+                <!-- Content Block - Tools List Start -->
+                <div class="content__block grid-block block-large">
+                    <!-- Tools List Start -->
+                    <div class="tools-cards d-flex justify-content-start flex-wrap">
+                        <!-- tools simgle item -->
+                        <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                            <div class="tools-cards__card">
+                                <img class="tools-cards__icon animate-in-up" src="https://devtest.pekova.com.tr/app/cv/img/C-Sharp-Tutorials.png" alt="Tools Icon">
+                                <h6 class="tools-cards__caption animate-in-up">C#</h6>
+                            </div>
+                        </div>
 
 
+                        <!-- tools simgle item -->
+                        <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                            <div class="tools-cards__card">
+                                <img class="tools-cards__icon animate-in-up" src="https://devtest.pekova.com.tr/app/cv/img/NET_Core_Logo.svg.png" alt="Tools Icon">
+                                <h6 class="tools-cards__caption animate-in-up">Asp.net Core</h6>
+                            </div>
+                        </div>
+
+                        <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                            <div class="tools-cards__card">
+                                <img class="tools-cards__icon animate-in-up" src="https://devtest.pekova.com.tr/app/cv/img/Bootstrap_logo.svg" alt="Tools Icon">
+                                <h6 class="tools-cards__caption animate-in-up">Boostrap</h6>
+                            </div>
+                        </div>
+
+                        <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                            <div class="tools-cards__card">
+                                <img class="tools-cards__icon animate-in-up" src="https://devtest.pekova.com.tr/app/cv/img/J5Yt92WW_400x400.png" alt="Tools Icon">
+                                <h6 class="tools-cards__caption animate-in-up">Mysql</h6>
+                            </div>
+                        </div>
+
+                        <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                            <div class="tools-cards__card">
+                                <img class="tools-cards__icon animate-in-up" src="https://devtest.pekova.com.tr/app/cv/img/sql-server_logo.png" alt="Tools Icon">
+                                <h6 class="tools-cards__caption animate-in-up">Microsoft Sql Server</h6>
+                            </div>
+                        </div>
+
+
+                        <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                            <div class="tools-cards__card">
+                                <img class="tools-cards__icon animate-in-up" src="https://devtest.pekova.com.tr/app/cv/img/Postgresql_elephant.svg.png" alt="Tools Icon">
+                                <h6 class="tools-cards__caption animate-in-up">Postgre Sql</h6>
+                            </div>
+                        </div>
+
+                        <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                            <div class="tools-cards__card">
+                                <img class="tools-cards__icon animate-in-up" src="https://devtest.pekova.com.tr/app/cv/img/Visual_Studio_Icon_2022.svg.png" alt="Tools Icon">
+                                <h6 class="tools-cards__caption animate-in-up">Visual Studio</h6>
+                            </div>
                         </div>
 
                     </div>
+                    <!-- Tools List End -->
+                </div>
+                <!-- Content Block - Tools List End -->
+                <!-- Content Block - H2 Block Start -->
 
+
+        </div>
+        <!-- Content Block - Testimonials Slider End -->
+        </section>
+        <!-- Resume Section End -->
+        <!-- Contact Section Start -->
+        <section id="contact" class="inner contact">
+
+            <!-- Content Block - H2 Section Title Start -->
+            <div class="content__block section-title">
+                <p class="h2__subtitle  animate-in-up">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13" fill="currentColor">
+                        <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
+                  C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
+                  C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z" />
+                    </svg>
+                    <span>Ä°letiÅŸim</span>
+                </p>
+                <h2 class="h2__title  animate-in-up">Bana ulaşmak için aşağıdan mail gönderebilirsiniz!</h2>
+            </div>
+            <!-- Content Block - H2 Section Title End -->
+            <!-- Content Block - Contact Form Start -->
+            <div class="content__block grid-block block-grid-large">
+                <div class="form-container">
+
+                    <!-- Reply Messages Start -->
+                    <div class="form__reply centered text-center">
+                        <i class="ph-bold ph-smiley reply__icon"></i>
+                        <p class="reply__title">Done!</p>
+                        <span class="reply__text">Thanks for your message. I'll get back as soon as possible.</span>
+                    </div>
+                    <!-- Reply Messages End -->
+                    <!-- Contact Form Start -->
                     @await Html.PartialAsync("/Views/Default/SendMessage.cshtml")
+                    <!-- Contact Form End -->
 
+                </div>
+            </div>
+            <!-- Content Block - Contact Form End -->
+            <!-- Content Block - Socials Cards Start -->
+            <div class="content__block grid-block">
+                <div class="socials-cards d-flex justify-content-start flex-wrap">
+                    <!-- socials item -->
+                    <div class="socials-cards__item d-flex grid-item-s animate-card-5">
+                        <div class="socials-cards__card">
+                            <i class="ph-bold ph-dribbble-logo"></i>
+                            <a class="socials-cards__link" href="https://www.linkedin.com/in/deniz-pekova/" target="_blank"></a>
+                        </div>
+                    </div>
+                    <!-- socials item -->
+                    <!-- socials item -->
+                    <div class="socials-cards__item d-flex grid-item-s animate-card-5">
+                        <div class="socials-cards__card">
+                            <i class="ph-bold ph-instagram-logo"></i>
+                            <a class="socials-cards__link" href="https://www.instagram.com/deniz_pekova/" target="_blank"></a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- Content Block - Socials Cards End -->
+            <!-- Content Block - Teaser Start -->
+            <div class="content__block">
+                <div class="teaser">
+                    <p class="teaser__text animate-in-up">
+                          Hakkımda daha fazlasını bilmek ister misin, 
+                          söyle bana projeniz hakkında mı yoksa sadece merhaba demek için mi?
+                        <a class="text-link-bold" href="mailto:info@pekova.com.tr?subject=Message%20from%20your%20site">Bana bir satır bırak</a>
+                        ve geri döneceğim 
+                        mümkün olan en kısa sürede.
+                    </p>
+                </div>
+            </div>
+            <!-- Content Block - Teaser End -->
+            <!-- Content Block - Contact Data Start -->
+            <div class="content__block">
+                <div class="container-fluid p-0 contact-lines animate-in-up">
+                    <div class="row g-0 contact-lines__item">
+                        <!-- data item -->
+                        <div class="col-12 col-md-4 contact-lines__data">
+                            <p class="contact-lines__title animate-in-up">Konum</p>
+                            <p class="contact-lines__text animate-in-up">
+                                <a class="text-link-bold" href="https://maps.app.goo.gl/xMJXTEUeHkv6kYRQ6" target="_blank">İstanbul, Türkiye</a>
+                            </p>
+                        </div>
+                        <!-- data item -->
+                        <div class="col-12 col-md-4 contact-lines__data">
+                            <p class="contact-lines__title animate-in-up">Telefon</p>
+                            <p class="contact-lines__text animate-in-up">
+                                <a class="text-link-bold" href="tel:+12127089400">+90 505-092-9479</a>
+                            </p>
+                        </div>
+                        <!-- data item -->
+                        <div class="col-12 col-md-4 contact-lines__data">
+                            <p class="contact-lines__title animate-in-up">Email</p>
+                            <p class="contact-lines__text animate-in-up">
+                                <a class="text-link-bold" href="mailto:info@pekova.com.tr?subject=Message%20from%20your%20site">info@pekova.com.tr</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Content Block - Contact Data End -->
+
+        </section>
+        <!-- Contact Section End -->
+
+    </div>
+    </div>
+    <!-- Page Content End -->
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+        <!-- Background of PhotoSwipe.
+        It's a separate element, as animating opacity is faster than rgba(). -->
+        <div class="pswp__bg"></div>
+
+        <!-- Slides wrapper with overflow:hidden. -->
+        <div class="pswp__scroll-wrap">
+
+            <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+            <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+            <div class="pswp__ui pswp__ui--hidden">
+
+                <div class="pswp__top-bar">
+
+                    <!--  Controls are self-explanatory. Order can be changed. -->
+
+                    <div class="pswp__counter"></div>
+
+                    <button class="pswp__button pswp__button--close link-s" title="Close (Esc)"></button>
+
+                    <button class="pswp__button pswp__button--share link-s" title="Share"></button>
+
+                    <button class="pswp__button pswp__button--fs link-s" title="Toggle fullscreen"></button>
+
+                    <button class="pswp__button pswp__button--zoom link-s" title="Zoom in/out"></button>
+
+                    <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                    <!-- element will get class pswp__preloader-active when preloader is running -->
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div>
+
+                <button class="pswp__button pswp__button--arrow--left link-s" title="Previous (arrow left)"></button>
+
+                <button class="pswp__button pswp__button--arrow--right link-s" title="Next (arrow right)"></button>
+
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
                 </div>
 
             </div>
-        </section><!-- End Contact Section -->
 
-    </main><!-- End #main -->
-    <!-- ======= Footer ======= -->
-    <footer id="footer">
-        <div class="container">
-            <div class="copyright">
-                &copy; Copyright <strong><span>Eriza</span></strong>
-            </div>
-            <div class="credits">
-            </div>
         </div>
-    </footer><!-- End  Footer -->
 
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    </div>
 
-    <!-- Vendor JS Files -->
-    <script src="~/iPortfolio/assets/vendor/purecounter/purecounter_vanilla.js"></script>
-    <script src="~/iPortfolio/assets/vendor/aos/aos.js"></script>
-    <script src="~/iPortfolio/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="~/iPortfolio/assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="~/iPortfolio/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="~/iPortfolio/assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="~/iPortfolio/assets/vendor/typed.js/typed.umd.js"></script>
-    <script src="~/iPortfolio/assets/vendor/waypoints/noframework.waypoints.js"></script>
-    <script src="~/iPortfolio/assets/vendor/php-email-form/validate.js"></script>
-
-    <!-- Template Main JS File -->
-    <script src="~/iPortfolio/assets/js/main.js"></script>
+    <!-- Load Scripts Start -->
+    <script src="~/HTML/js/libs.min.js"></script>
+    <script>
+        const content = document.querySelector('body');
+        const imgLoad = imagesLoaded(content);
+        imgLoad.on('done', instance => {
+            setTimeout(() => {
+                document.getElementById("svgBackground").classList.add("loaded");
+            }, "1000");
+        });
+    </script>
+    <script src="~/HTML/js/app.js"></script>
+    <script src="~/HTML/js/gallery-init.js"></script>
+    <!-- Load Scripts End -->
 
 </body>
 

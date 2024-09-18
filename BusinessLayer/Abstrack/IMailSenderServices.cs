@@ -23,13 +23,13 @@ namespace BusinessLayer.Abstrack
                 using (SmtpClient smtpClient = new SmtpClient("mt-prime-win.guzelhosting.com"))
                 {
                     smtpClient.Port = 587;
-                    smtpClient.Credentials = new NetworkCredential("information@pekova.com.tr", "N4^v0g2a2");
+                    smtpClient.Credentials = new NetworkCredential("info@pekova.com.tr", "9Mcbh9*76");
                     smtpClient.EnableSsl = true;
                     string recipientEmail = $"{email}";
                     string emailTitle = $"{subject}";
                     string emailBody = $"Ad Soyad: {nameandsurname}\nE-posta: {email}\nMesaj: {message}";
 
-                    MailMessage mail = new MailMessage(recipientEmail,"information@pekova.com.tr",  emailTitle, emailBody);
+                    MailMessage mail = new MailMessage(recipientEmail, "info@pekova.com.tr",  emailTitle, emailBody);
 
                     await smtpClient.SendMailAsync(mail);
                     _logger.LogInformation($"Başarılı Şekilde Gönderildi. Gönderen Mail {email}. Gönderen Kişi {nameandsurname}");

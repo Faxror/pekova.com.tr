@@ -25,4 +25,10 @@
     <ProjectReference Include="..\BusinessLayer\BusinessLayer.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\HTML\img\avatars\" />
+    <Folder Include="wwwroot\HTML\img\services\" />
+    <Folder Include="wwwroot\HTML\img\works\" />
+  </ItemGroup>
+
 </Project>
